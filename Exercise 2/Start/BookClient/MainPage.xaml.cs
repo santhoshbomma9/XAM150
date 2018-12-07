@@ -53,7 +53,7 @@ namespace BookClient
                     "Are you sure you want to delete the book '"
                         + book.Title + "'?", "Yes", "Cancel") == true)
                 {
-                    await manager.Delete(book.ISBN);
+                    await manager.DeleteAsync(book.ISBN);
                     books.Remove(book);
                 }
             }
